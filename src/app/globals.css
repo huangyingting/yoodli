@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  --yoodli-primary: #524ffc;
+  --yoodli-primary-hover: #4e4cbb;
+  --yoodli-primary-light: #f5f8fe;
+  --yoodli-secondary: #1da9e6;
+  --yoodli-navy: #040348;
+  --yoodli-purple1: #e6e5ff;
+  --yoodli-purple2: #9b99ff;
+  --yoodli-success: #0fa16d;
+  --yoodli-warning: #ffca42;
+  --yoodli-error: #cd4631;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #040348;
+  background-color: #f6f8ff;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: "Poppins", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.bg-yoodli-gradient {
+  background: linear-gradient(90deg, #1da9e6 0%, #6966fe 82%);
+}
+
+.bg-yoodli-slanted {
+  background: linear-gradient(72deg, #eff5fd 0%, #eeeefe 79%);
+}
+
+.bg-yoodli-dark-hero {
+  background: linear-gradient(72deg, #040348 0%, #05045d 100%);
+}

@@ -1,0 +1,681 @@
+[
+  {
+    "path": "/",
+    "name": "01-home",
+    "url": "https://yoodli.ai/",
+    "title": "AI Platform for Human Skills | Yoodli",
+    "h1": [
+      "AI that helps your team"
+    ],
+    "h2": [
+      "TRUSTED BY 100s OF TEAMS INCLUDING",
+      "Yoodli drives real impact across organizations and industries",
+      "One system, powered by AI roleplays,\nthat drives measurable outcomes",
+      "Yoodli meets your team in the flow of work",
+      "One flexible platform for every team and organization",
+      "Featured in",
+      "Help your people get measurably better in their careers"
+    ],
+    "tabsOrButtons": [
+      "Roleplays",
+      "Personas",
+      "Coach",
+      "LEARN AND PRACTICE\nYoodli Roleplays",
+      "EMBED\nYoodli Personas",
+      "BUILD\nYoodli Create",
+      "REINFORCE\nYoodli Coach",
+      "PROVE\nYoodli Measure",
+      "Sales",
+      "Onboarding",
+      "Managers",
+      "Tool rollouts",
+      "Healthcare",
+      "Partners",
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/platform/roleplays",
+    "name": "02-platform-roleplays",
+    "url": "https://yoodli.ai/platform/roleplays",
+    "title": "Yoodli Roleplays | The engine underneath every rep | Yoodli",
+    "h1": [
+      "Yoodli Roleplays"
+    ],
+    "h2": [
+      "What you get",
+      "How it works",
+      "FAQ",
+      "One platform, five capabilities",
+      "See Yoodli Roleplays in action"
+    ],
+    "tabsOrButtons": [
+      "What are Yoodli Roleplays?",
+      "What formats do roleplays support?",
+      "Who typically uses Yoodli Roleplays?",
+      "How are AI roleplays used in sales and enablement?",
+      "Why do AI roleplays work better than traditional training?",
+      "How is Yoodli different from other AI roleplay platforms?",
+      "Do your roleplays support enterprise scale?",
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/platform/personas",
+    "name": "03-platform-personas",
+    "url": "https://yoodli.ai/platform/personas",
+    "title": "Yoodli Personas | Yoodli",
+    "h1": [
+      "Yoodli Personas"
+    ],
+    "h2": [
+      "What you get",
+      "How it works",
+      "FAQ",
+      "One platform, five capabilities",
+      "See Yoodli Personas in action"
+    ],
+    "tabsOrButtons": [
+      "What are Yoodli Personas?",
+      "How are personas built?",
+      "What formats do personas support?",
+      "Can one roleplay include more than one persona?",
+      "Can we embed personas on our portal, LMS or website?",
+      "Do personas support other languages?",
+      "How do we know a persona is working?",
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/platform/create",
+    "name": "04-platform-create",
+    "url": "https://yoodli.ai/platform/create",
+    "title": "Yoodli Create | Learning journeys in minutes | Yoodli",
+    "h1": [
+      "Yoodli Create"
+    ],
+    "h2": [
+      "What you get",
+      "How it works",
+      "FAQ",
+      "One platform, five capabilities",
+      "See Yoodli Create in action"
+    ],
+    "tabsOrButtons": [
+      "What is Yoodli Create?",
+      "How is Yoodli Create different from traditional course building?",
+      "How does Yoodli Create stay up to date?",
+      "Can Yoodli Create support onboarding?",
+      "How does Yoodli Create connect to the rest of Yoodli?",
+      "How do leaders measure the impact?",
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/platform/coach",
+    "name": "05-platform-coach",
+    "url": "https://yoodli.ai/platform/coach",
+    "title": "Yoodli Coach | Your personal trainer for skills",
+    "h1": [
+      "Yoodli Coach"
+    ],
+    "h2": [
+      "What you get",
+      "How it works",
+      "FAQ",
+      "One platform, five capabilities",
+      "See Yoodli Coach in action"
+    ],
+    "tabsOrButtons": [
+      "What is Yoodli Coach?",
+      "How is Yoodli Coach different from one-time training?",
+      "Does Yoodli Coach replace managers?",
+      "How does Yoodli Coach adapt to changing priorities?",
+      "What tools does Yoodli Coach work with?",
+      "How do leaders measure impact?",
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/platform/measure",
+    "name": "06-platform-measure",
+    "url": "https://yoodli.ai/platform/measure",
+    "title": "Yoodli Measure | Yoodli",
+    "h1": [
+      "Yoodli Measure"
+    ],
+    "h2": [
+      "What you get",
+      "How it works",
+      "FAQ",
+      "One platform, five capabilities",
+      "See Yoodli Measure in action"
+    ],
+    "tabsOrButtons": [
+      "What is Yoodli Measure?",
+      "What analytics does Yoodli provide?",
+      "Can leaders track readiness across teams?",
+      "How does Yoodli help identify skill gaps?",
+      "Can reports be exported?",
+      "Who can see the analytics?",
+      "How does reporting connect to business outcomes?",
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/pricing",
+    "name": "07-pricing",
+    "url": "https://yoodli.ai/pricing",
+    "title": "Pricing & Plans | Yoodli",
+    "h1": [
+      "Find your plan"
+    ],
+    "h2": [
+      "Practice on your own",
+      "Train your team or organization",
+      "Plans for enterprise use",
+      "Plans for individual use",
+      "What counts as a Yoodli roleplay?",
+      "Can my employer reimburse Yoodli?",
+      "How do I get Yoodli for my team or organization?",
+      "What is the difference between Yoodli Pro and Advanced?",
+      "Does Yoodli train its AI on my data?",
+      "Can I change or cancel my Yoodli subscription?",
+      "Ready to build a performance-ready team?"
+    ],
+    "tabsOrButtons": [
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/for-business/revenue-teams",
+    "name": "08-business-revenue-teams",
+    "url": "https://yoodli.ai/for-business/revenue-teams",
+    "title": "Revenue Teams | Yoodli AI Roleplays",
+    "h1": [
+      "Revenue Teams"
+    ],
+    "h2": [
+      "TRUSTED BY 100s OF TEAMS INCLUDING",
+      "How revenue and GTM teams use Yoodli",
+      "Turn GTM strategy into consistent execution",
+      "Built for modern revenue organizations",
+      "Visibility across the revenue engine",
+      "Snowflake's AI Roleplay Results",
+      "Secure, enterprise-ready, and built for scale",
+      "Impact of Yoodli AI Roleplays",
+      "Frequently asked questions about Yoodli for revenue teams"
+    ],
+    "tabsOrButtons": [
+      "What is the difference between revenue teams and GTM teams?",
+      "How does Yoodli support revenue and GTM teams?",
+      "Can Yoodli be used across multiple revenue roles?",
+      "How does Yoodli improve alignment across sales, marketing, and customer success?",
+      "How do revenue leaders measure impact?",
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/for-business/sales",
+    "name": "09-business-sales",
+    "url": "https://yoodli.ai/for-business/sales",
+    "title": "AI-Powered Sales Enablement & Roleplay Training | Yoodli",
+    "h1": [
+      "Sales and GTM Enablement"
+    ],
+    "h2": [
+      "TRUSTED BY 100s OF TEAMS INCLUDING",
+      "How enablement teams use Yoodli",
+      "Close the gap between training and performance",
+      "Snowflake's AI Roleplay Results",
+      "Impact of Yoodli AI Roleplays",
+      "Built for how enablement actually works",
+      "Check out our case studies",
+      "Yoodli boosts confidence of job applicants, presenters, and minorities with automated video coaching platform powered by Google Cloud",
+      "Sandler and Yoodli Partner to Offer Generative AI Sales Coaching to Sales Professionals and Leaders Worldwide",
+      "Korn Ferry and Yoodli Partner to Bring AI-powered Communication Coaching to Organizations Worldwide",
+      "Secure and Compliant",
+      "Secure, enterprise-ready, and built for global teams"
+    ],
+    "tabsOrButtons": [
+      "How does Yoodli support GTM enablement teams?",
+      "Can Yoodli replace manual roleplays for certification?",
+      "How does Yoodli align with our sales methodology?",
+      "How does Yoodli help with onboarding?",
+      "How do enablement leaders measure impact?",
+      "GTM Enablement",
+      "Learning & Development",
+      "Partner Enablement",
+      "Corporate Communications",
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/for-business/learning-and-development",
+    "name": "10-business-lnd",
+    "url": "https://yoodli.ai/for-business/learning-and-development",
+    "title": "Learning & Development AI Coaching & Training Programs | Yoodli",
+    "h1": [
+      "Learning and Development"
+    ],
+    "h2": [
+      "TRUSTED BY 100s OF TEAMS INCLUDING",
+      "How L&D teams use Yoodli",
+      "Close the gap between learning and behavior change",
+      "Impact of Yoodli AI Roleplays",
+      "Built for how L&D actually operates",
+      "Secure, enterprise-ready, and built for global teams",
+      "Check out our case studies",
+      "Korn Ferry and Yoodli Partner to Bring AI-powered Communication Coaching to Organizations Worldwide",
+      "Revolutionizing Leadership Development: How LAK Group Boosted Coaching ROI by 14x with Yoodli AI",
+      "Spencer Stuart and Yoodli Partner to Bring Gen AI Interview Coaching to Executive Search",
+      "Frequently asked questions about Yoodli for learning and development teams"
+    ],
+    "tabsOrButtons": [
+      "How does Yoodli support learning and development programs?",
+      "Can Yoodli support enterprise-wide onboarding?",
+      "How does Yoodli personalize learning?",
+      "Does Yoodli replace instructors or facilitators?",
+      "How do L&D leaders measure impact?",
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/for-business/corporate-communications",
+    "name": "11-business-exec-coaching",
+    "url": "https://yoodli.ai/for-business/corporate-communications",
+    "title": "AI Communication Coaching for Corporate Communications | Yoodli",
+    "h1": [
+      "Executive Coaching"
+    ],
+    "h2": [
+      "TRUSTED BY 100s OF TEAMS INCLUDING",
+      "How executive coaching and corporate communication teams use Yoodli",
+      "Extend the impact of executive coaching",
+      "Impact of Yoodli AI Roleplays",
+      "Knowmium's Path to Scalable Coaching",
+      "Built for scalable communication coaching",
+      "Secure, enterprise-ready, and designed for confidentiality",
+      "Check out our case studies",
+      "Yoodli boosts confidence of job applicants, presenters, and minorities with automated video coaching platform powered by Google Cloud",
+      "How Clarity Media Group is using Yoodli to transform their media training",
+      "How Bryan from Decker Communications Transformed His Executive Communications Coaching Business with AI",
+      "Frequently asked questions about Yoodli for executive coaching"
+    ],
+    "tabsOrButtons": [
+      "How does Yoodli support executive communication development?",
+      "Can Yoodli be used alongside professional coaches?",
+      "Is Yoodli appropriate for confidential executive preparation?",
+      "How does Yoodli help improve executive presence?",
+      "Who typically uses Yoodli for executive coaching?",
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/for-business/leadership",
+    "name": "12-business-leadership",
+    "url": "https://yoodli.ai/for-business/leadership",
+    "title": "Leadership Communication & Executive Coaching | Yoodli",
+    "h1": [
+      "YOODLI AI FOR EXECUTIVE COACHING"
+    ],
+    "h2": [
+      "Show up like a leader",
+      "AI-Powered Executive Coach in action",
+      "Why Yoodli",
+      "Yoodli has helped countless leaders improve their speaking skills",
+      "HOW YOODLI WORKS",
+      "Other ways to use Yoodli"
+    ],
+    "tabsOrButtons": [
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/for-business/engineering",
+    "name": "13-business-engineering",
+    "url": "https://yoodli.ai/for-business/engineering",
+    "title": "Engineering Team Communication & Collaboration Training | Yoodli",
+    "h1": [
+      "YOODLI AI SPEECH COACH FOR ENGINEERING TEAMS"
+    ],
+    "h2": [
+      "Don't let public speaking hold you back",
+      "AI-Powered Communication Coach in action",
+      "Why Yoodli",
+      "Yoodli has helped 300,000+ professionals improve their speaking skills",
+      "HOW YOODLI WORKS",
+      "Other ways to use Yoodli"
+    ],
+    "tabsOrButtons": [
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/use-cases/sales-training",
+    "name": "14-usecase-sales-training",
+    "url": "https://yoodli.ai/use-cases/sales-training",
+    "title": "AI Sales Training | Yoodli",
+    "h1": [
+      "Turn Knowledge Into Execution"
+    ],
+    "h2": [
+      "How to use AI in sales training",
+      "AI roleplays for sales training",
+      "Why AI sales training works better than traditional methods",
+      "Snowflake's AI Roleplay Results",
+      "Built for modern sales organizations",
+      "Transform sales training with AI",
+      "Frequently asked questions about AI sales training"
+    ],
+    "tabsOrButtons": [
+      "What is AI sales training?",
+      "How can we use AI in sales training?",
+      "Are AI roleplays effective for sales training?",
+      "Does AI sales training replace managers?",
+      "How do we measure ROI from AI sales training?",
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/use-cases/onboarding-certification",
+    "name": "15-usecase-onboarding",
+    "url": "https://yoodli.ai/use-cases/onboarding-certification",
+    "title": "AI Onboarding & Certification | Yoodli",
+    "h1": [
+      "Onboarding and Certification"
+    ],
+    "h2": [
+      "What is AI-powered onboarding and certification?",
+      "How to use AI for onboarding and certification",
+      "TRUSTED BY 100s OF TEAMS INCLUDING",
+      "AI roleplays for onboarding and certification",
+      "Why AI improves onboarding and certification",
+      "Built for enterprise organizations",
+      "Transform onboarding with AI",
+      "Frequently asked questions about AI onboarding and certification"
+    ],
+    "tabsOrButtons": [
+      "What is AI-powered onboarding?",
+      "How does AI improve certification processes?",
+      "Can AI onboarding work across different roles?",
+      "Does AI onboarding replace managers?",
+      "How do we measure onboarding effectiveness?",
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/use-cases/partner-enablement",
+    "name": "16-usecase-partner-enablement",
+    "url": "https://yoodli.ai/use-cases/partner-enablement",
+    "title": "Partner Enablement | Yoodli",
+    "h1": [
+      "Partner Enablement"
+    ],
+    "h2": [
+      "TRUSTED BY 100s OF TEAMS INCLUDING",
+      "How partner teams use Yoodli",
+      "Close the gap between training and execution",
+      "Impact of Yoodli AI Roleplays",
+      "Built for how partner ecosystems operate",
+      "Secure, enterprise-ready, and built for global teams",
+      "Frequently asked questions about Yoodli for partner enablement"
+    ],
+    "tabsOrButtons": [
+      "How does Yoodli support partner enablement programs?",
+      "Can Yoodli support partner certification?",
+      "How does Yoodli ensure brand consistency across partners?",
+      "Is Yoodli suitable for global partner ecosystems?",
+      "How do partner leaders measure readiness?",
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/use-cases/customer-support",
+    "name": "17-usecase-customer-support",
+    "url": "https://yoodli.ai/use-cases/customer-support",
+    "title": "Customer Support Training | Yoodli AI Roleplays",
+    "h1": [
+      "Customer Support Training"
+    ],
+    "h2": [
+      "TRUSTED BY 100s OF TEAMS INCLUDING",
+      "How customer support teams use Yoodli",
+      "Turn training into consistent service delivery",
+      "Built for modern support organizations",
+      "Yoodli gives support leaders clear insight into:",
+      "Secure, enterprise-ready, and built for scale",
+      "Frequently asked questions about Yoodli for customer support training"
+    ],
+    "tabsOrButtons": [
+      "Practice scenarios",
+      "Service standards",
+      "Screen-sharing",
+      "Skill development",
+      "Practice scenarios",
+      "Service standards",
+      "Screen-sharing",
+      "Skill development",
+      "How does Yoodli support customer support training?",
+      "Can Yoodli be used for support onboarding?",
+      "What skills can be evaluated?",
+      "How do support leaders measure impact?",
+      "Can Yoodli provide feedback on screen-sharing and product walkthroughs?",
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/use-cases/public-speaking",
+    "name": "18-usecase-public-speaking",
+    "url": "https://yoodli.ai/use-cases/public-speaking",
+    "title": "Public Speaking Practice & AI Coaching Use Case | Yoodli",
+    "h1": [
+      "Turn Preparation Into Confident Delivery"
+    ],
+    "h2": [
+      "What is AI-powered public speaking training?",
+      "HOW YOODLI WORKS",
+      "How to use AI for public speaking and leadership development",
+      "Knowmium's Path to Scalable Coaching",
+      "AI roleplays for public speaking and executive presence",
+      "Built for leadership and enterprise environments",
+      "Elevate leadership communication with AI",
+      "Frequently asked questions about AI public speaking training",
+      "SEE SAMPLE SPEECHES FROM FAMOUS CELEBRITIES"
+    ],
+    "tabsOrButtons": [
+      "What is AI public speaking training?",
+      "Can AI help with executive presence?",
+      "Is this only for executives?",
+      "Does AI replace executive coaches?",
+      "How do organizations measure improvement?",
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/use-cases/speech-coaches",
+    "name": "19-usecase-speech-coaches",
+    "url": "https://yoodli.ai/use-cases/speech-coaches",
+    "title": "AI Roleplay Platform for Communication & Speech Coaches | Yoodli",
+    "h1": [
+      "AI Roleplay & Coaching Platform for Communication Coaches"
+    ],
+    "h2": [
+      "Utilized by top performing employees and teams",
+      "How Yoodli AI Roleplays Help Prepare",
+      "Why Communication Coaches Love Yoodli",
+      "TEDx instructors, exec coaches, media trainers, SLPs, interview coaches, and more",
+      "Frequently asked questions about Yoodli for coaching",
+      "Coaching is one of the many ways to use Yoodli's AI roleplay technology!"
+    ],
+    "tabsOrButtons": [
+      "What is Yoodli?",
+      "How do communication coaches use Yoodli?",
+      "Is Yoodli only an AI speech coach?",
+      "Can organizations use Yoodli for communication training?",
+      "Does Yoodli replace communication coaches?",
+      "Can coaches customize Yoodli for their programs?",
+      "How can Yoodli help coaches scale their programs?",
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/sample-speeches",
+    "name": "20-sample-speeches",
+    "url": "https://yoodli.ai/sample-speeches",
+    "title": "Sample Speeches | Yoodli",
+    "h1": [
+      "Sample Speeches"
+    ],
+    "h2": [],
+    "tabsOrButtons": [
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/courses",
+    "name": "21-courses",
+    "url": "https://yoodli.ai/courses",
+    "title": "Public Speaking & Communication Courses | Yoodli",
+    "h1": [
+      "Courses"
+    ],
+    "h2": [
+      "Fundamentals of Public Speaking",
+      "Warmup exercises to shake off your nerves",
+      "Interviewing Tips",
+      "Deconstructing Celebrity Speeches",
+      "The Rule of 3's",
+      "Impromptu Speaking Strategies",
+      "Improve your Video Presence in Meetings",
+      "Importance of Body Language"
+    ],
+    "tabsOrButtons": [
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/coach-directory",
+    "name": "22-coach-directory",
+    "url": "https://yoodli.ai/coach-directory",
+    "title": "Coach Directory | Yoodli",
+    "h1": [
+      "Coach Directory"
+    ],
+    "h2": [
+      "Adeseye Omole",
+      "Akshat Shrivastava",
+      "Aleksandra Szczepaniak",
+      "Alex Fairlie",
+      "Andrew Churchill",
+      "Angela Belford",
+      "Archana Parmar",
+      "Arthur Hughes",
+      "Benjamin Ball Associates Ltd - Business Presentation Skills Training",
+      "Bill Brander",
+      "Brian Hodgson",
+      "Cameron Golinsky"
+    ],
+    "tabsOrButtons": [
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/talk-to-sales",
+    "name": "23-talk-to-sales",
+    "url": "https://yoodli.ai/talk-to-sales",
+    "title": "Get a Demo | Yoodli",
+    "h1": [
+      "See Why Teams at Google Cloud, Snowflake, & More Practice with Yoodli"
+    ],
+    "h2": [
+      "Request a demo and we'll show you how Yoodli:",
+      "Get a Demo",
+      "Trusted by leading enablement & L&D teams",
+      "See what people are saying about Yoodli",
+      "Snowflake Saved 1,200+ Manager Hours Per Quarter with Yoodli"
+    ],
+    "tabsOrButtons": [
+      "Request a Demo",
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/about",
+    "name": "24-about",
+    "url": "https://yoodli.ai/about",
+    "title": "About Us | Yoodli",
+    "h1": [
+      "We're on a mission to help people communicate with confidence"
+    ],
+    "h2": [
+      "See Yoodli in action",
+      "Our investors"
+    ],
+    "tabsOrButtons": [
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/faq",
+    "name": "25-faq",
+    "url": "https://yoodli.ai/faq",
+    "title": "FAQ | Yoodli",
+    "h1": [
+      "Frequently Asked Questions"
+    ],
+    "h2": [
+      "Do you have instructional videos where I can get started?",
+      "How secure is my data?",
+      "What about pricing?",
+      "Can I use Yoodli on my everyday calls?",
+      "I’m a communication coach. How can I use Yoodli?",
+      "I’m a communication coach. How can I apply to join your coach advisor board?",
+      "I have more questions—Help!"
+    ],
+    "tabsOrButtons": [
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/wall-of-love",
+    "name": "26-wall-of-love",
+    "url": "https://yoodli.ai/wall-of-love",
+    "title": "Wall of Love | Yoodli",
+    "h1": [
+      "Wall of Love"
+    ],
+    "h2": [],
+    "tabsOrButtons": [
+      "Show more",
+      "Submit",
+      "Cookie Preferences"
+    ]
+  },
+  {
+    "path": "/feature-announcements",
+    "name": "27-feature-announcements",
+    "url": "https://yoodli.ai/feature-announcements",
+    "title": "Feature Announcements | Yoodli",
+    "h1": [
+      "Feature Announcements"
+    ],
+    "h2": [
+      "Programs, Thoughtfully Reimagined: Describe, Test and Refine in One Place",
+      "More Coaching to More Customers: Every Kaia (Outreach) call is now a coachable moment",
+      "Embed Yoodli Programs on Your Learning Tools and Website",
+      "Videos in Roleplays got an Upgrade: Video Segment Playback is Here",
+      "From Your Calls to Your Practice: How Post-Call Coaching Turns your Gong Calls into a Personal AI Coach",
+      "Yoodli Now Generates What It Teaches: Introducing Auto-Generated Learning Content",
+      "The Expanded Yoodli Template Library Is Here: Launch Enablement and Tool Training in Minutes",
+      "From Release to Rep-Ready: How We Built Enablement That Moves at the Speed of Your Product",
+      "Introducing MCP connection for Yoodli: from your tools to your team’s practice, without the manual work",
+      "Yoodli Programs Now Support Documents, Videos, and Audio. Learn It and Practice It in One Place",
+      "Introducing AI Roleplays with Live Visual Content: Learn and Practice in One Continuous Experience",
+      "Introducing Roleplay Sharing: A Scalable Way to Enable Team Practice"
+    ],
+    "tabsOrButtons": [
+      "Cookie Preferences"
+    ]
+  }
+]

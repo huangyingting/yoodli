@@ -1,0 +1,479 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model PasswordCredential {
+  id                String    @id @default(cuid())
+  userId            String    @unique
+  passwordHash      String
+  passwordChangedAt DateTime  @default(now())
+  resetTokenHash    String?   @unique
+  resetExpiresAt    DateTime?
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([resetExpiresAt])
+}
+
+model PendingRegistration {
+  id              String   @id @default(cuid())
+  email           String
+  normalizedEmail String   @unique
+  name            String?
+  passwordHash    String
+  tokenHash       String   @unique
+  expiresAt       DateTime
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([expiresAt])
+}
+
+model AccountInvitation {
+  id              String    @id @default(cuid())
+  email           String
+  normalizedEmail String
+  activeForEmail  String?   @unique
+  tokenHash       String?   @unique
+  status          String    @default("PENDING") // "PENDING" | "ACCEPTED" | "REVOKED" | "EXPIRED"
+  invitedById     String?
+  acceptedById    String?
+  expiresAt       DateTime
+  acceptedAt      DateTime?
+  revokedAt       DateTime?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @default(now()) @updatedAt
+
+  invitedBy  User?                @relation("AccountInvitationInviter", fields: [invitedById], references: [id], onDelete: SetNull)
+  acceptedBy User?                @relation("AccountInvitationAcceptor", fields: [acceptedById], references: [id], onDelete: SetNull)
+  emails     AccountEmailOutbox[]
+
+  @@index([status, expiresAt])
+  @@index([normalizedEmail, createdAt])
+  @@index([invitedById])
+  @@index([acceptedById])
+}
+
+model AccountEmailOutbox {
+  id            String    @id @default(cuid())
+  payload       String
+  status        String    @default("pending")
+  claimToken    String?
+  lastAttemptAt DateTime?
+  lastError     String?
+  sentAt        DateTime?
+  expiresAt     DateTime
+  createdAt     DateTime  @default(now())
+  invitationId  String?
+
+  invitation AccountInvitation? @relation(fields: [invitationId], references: [id], onDelete: SetNull)
+
+  @@index([status, createdAt])
+  @@index([invitationId])
+}
+
+model User {
+  id                  String                  @id @default(cuid())
+  name                String
+  email               String                  @unique
+  emailVerified       DateTime?
+  passwordHash        String?
+  image               String?
+  jobTitle            String                  @default("Enterprise Account Executive")
+  department          String                  @default("Global Revenue")
+  role                String                  @default("ADMIN") // ADMIN, MANAGER, MEMBER, COACH
+  workspaceMode       String                  @default("MEMBER") // MEMBER, ADMIN
+  planTier            String                  @default("ENTERPRISE") // FREE, PRO, ADVANCED, ENTERPRISE
+  yoodlisRemaining    Int                     @default(46)
+  dayStreak           Int                     @default(5)
+  defaultPrivacy      String                  @default("PRIVATE") // PRIVATE, SHARED_LINK, ORG
+  preferredLanguage   String                  @default("en-US")
+  aiCoachingEnabled   Boolean                 @default(true)
+  calendarConnected   Boolean                 @default(true)
+  onboardingCompleted Boolean                 @default(true)
+  primaryGoal         String                  @default("Sales & Revenue Enablement")
+  createdAt           DateTime                @default(now())
+  updatedAt           DateTime                @updatedAt
+
+  accounts                   Account[]
+  sessions                   Session[]
+  passwordCredential         PasswordCredential?
+  accountInvitationsSent     AccountInvitation[]     @relation("AccountInvitationInviter")
+  accountInvitationsAccepted AccountInvitation[]     @relation("AccountInvitationAcceptor")
+  orgMemberships             OrgMember[]
+  speeches                   Speech[]
+  enrollments                UserProgramEnrollment[]
+  exerciseAttempts           ExerciseAttempt[]
+}
+
+model Organization {
+  id             String           @id @default(cuid())
+  name           String
+  slug           String           @unique
+  logoUrl        String?
+  domain         String           @default("acme.io")
+  planName       String           @default("Enterprise Annual")
+  seatsTotal     Int              @default(100)
+  seatsUsed      Int              @default(78)
+  defaultSharing String           @default("PRIVATE") // PRIVATE, ORG_ADMINS, ORG_ALL
+  ssoEnabled     Boolean          @default(true)
+  scimEnabled    Boolean          @default(true)
+  sampleDataMode Boolean          @default(false)
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime         @updatedAt
+
+  members        OrgMember[]
+  invites        OrgInvite[]
+  groups         OrgGroup[]
+  reportingTeams ReportingTeam[]
+  personas       Persona[]
+  customGoals    CustomGoal[]
+  scenarios      RoleplayScenario[]
+  questionBanks  QuestionBank[]
+  programs       Program[]
+  courses        Course[]
+  practiceLoops  PracticeLoop[]
+  coachBotDocs   CoachBotDocument[]
+  integrations   OrgIntegration[]
+  speeches       Speech[]
+}
+
+model OrgMember {
+  id            String       @id @default(cuid())
+  orgId         String
+  userId        String?
+  name          String
+  email         String
+  avatarUrl     String?
+  role          String       @default("MEMBER") // ADMIN, MANAGER, MEMBER, COACH
+  groupName     String       @default("Enterprise Sales NA")
+  reportingTeam String       @default("Sarah Chen's Team")
+  yoodlisCount  Int          @default(12)
+  avgScore      Int          @default(86)
+  lastActiveAt  DateTime     @default(now())
+  joinedAt      DateTime     @default(now())
+
+  organization  Organization @relation(fields: [orgId], references: [id], onDelete: Cascade)
+  user          User?        @relation(fields: [userId], references: [id], onDelete: SetNull)
+}
+
+model OrgInvite {
+  id           String       @id @default(cuid())
+  orgId        String
+  email        String
+  role         String       @default("MEMBER")
+  groupName    String       @default("Enterprise Sales NA")
+  status       String       @default("PENDING") // PENDING, ACCEPTED, EXPIRED
+  invitedBy    String       @default("Alex Rivera")
+  createdAt    DateTime     @default(now())
+
+  organization Organization @relation(fields: [orgId], references: [id], onDelete: Cascade)
+}
+
+model OrgGroup {
+  id                    String       @id @default(cuid())
+  orgId                 String
+  name                  String
+  description           String
+  leadName              String
+  memberCount           Int          @default(18)
+  assignedProgramsCount Int          @default(2)
+  avgCompletionPct      Int          @default(84)
+  createdAt             DateTime     @default(now())
+
+  organization          Organization @relation(fields: [orgId], references: [id], onDelete: Cascade)
+}
+
+model ReportingTeam {
+  id               String       @id @default(cuid())
+  orgId            String
+  name             String
+  managerName      String
+  managerEmail     String
+  directReports    Int          @default(8)
+  yoodlisLast30d   Int          @default(64)
+  avgGoalPassRate  Int          @default(88)
+  createdAt        DateTime     @default(now())
+
+  organization     Organization @relation(fields: [orgId], references: [id], onDelete: Cascade)
+}
+
+model Persona {
+  id           String             @id @default(cuid())
+  orgId        String
+  name         String
+  title        String
+  company      String             @default("GlobalTech Enterprise")
+  avatarUrl    String
+  demeanor     String             @default("Skeptical") // Skeptical, Analytical, Friendly, Busy Executive, Challenging
+  voiceName    String             @default("Nova (Executive Female)")
+  bio          String
+  systemPrompt String
+  isDefault    Boolean            @default(false)
+  createdAt    DateTime           @default(now())
+
+  organization Organization       @relation(fields: [orgId], references: [id], onDelete: Cascade)
+  scenarios    RoleplayScenario[]
+}
+
+model CustomGoal {
+  id                 String       @id @default(cuid())
+  orgId              String
+  title              String
+  description        String
+  goalType           String       @default("RATED") // BINARY, RATED, COMPOUND, KNOWLEDGE_BASED
+  category           String       @default("Discovery & Value")
+  rubricCriteriaJson String       @default("[]")
+  passThreshold      Int          @default(75)
+  usageCount         Int          @default(14)
+  avgScorePct        Int          @default(82)
+  createdAt          DateTime     @default(now())
+
+  organization       Organization @relation(fields: [orgId], references: [id], onDelete: Cascade)
+}
+
+model RoleplayScenario {
+  id              String       @id @default(cuid())
+  orgId           String
+  personaId       String
+  title           String
+  description     String
+  category        String       @default("OBJECTION_HANDLING") // OBJECTION_HANDLING, COLD_CALL, INBOUND_DISCOVERY_CALL, OUTBOUND_DISCOVERY_CALL, BEHAVIORAL_INTERVIEW, TECHNICAL_INTERVIEW, PITCH, MANAGER_PERF_REVIEW, MANAGER_SKILLS_TRAINING
+  difficulty      String       @default("Intermediate") // Beginner, Intermediate, Advanced
+  roundelColor    String       @default("#F1B6EB")
+  visibility      String       @default("ORG") // ORG, MY, SHARED, PUBLIC
+  starterPrompt   String
+  scenarioContext String
+  goalsJson       String       @default("[]")
+  questionsJson   String       @default("[]")
+  completions     Int          @default(42)
+  avgScore        Int          @default(85)
+  createdBy       String       @default("Alex Rivera")
+  createdAt       DateTime     @default(now())
+
+  organization    Organization @relation(fields: [orgId], references: [id], onDelete: Cascade)
+  persona         Persona      @relation(fields: [personaId], references: [id], onDelete: Cascade)
+  speeches        Speech[]
+}
+
+model QuestionBank {
+  id            String       @id @default(cuid())
+  orgId         String
+  title         String
+  category      String       @default("Behavioral Interview")
+  description   String
+  questionsJson String       @default("[]")
+  createdBy     String       @default("Alex Rivera")
+  createdAt     DateTime     @default(now())
+
+  organization  Organization @relation(fields: [orgId], references: [id], onDelete: Cascade)
+}
+
+model Speech {
+  id                    String            @id @default(cuid())
+  shareSlug             String            @unique
+  userId                String
+  orgId                 String
+  scenarioId            String?
+  title                 String
+  practiceType          String            @default("ROLEPLAY") // ROLEPLAY, INTERVIEW, SPEECH, COACH, UPLOAD
+  durationSeconds       Int               @default(185)
+  videoUrl              String?
+  visibility            String            @default("SHARED_LINK") // PRIVATE, SHARED_LINK, ORG
+  overallScore          Int               @default(88)
+  wpmAverage            Int               @default(144)
+  wpmSeriesJson         String            @default("[]")
+  fillerWordCount       Int               @default(3)
+  fillerWordPct         Float             @default(1.4)
+  fillerBreakdownJson   String            @default("{}")
+  weakWordCount         Int               @default(2)
+  weakWordPct           Float             @default(0.9)
+  weakBreakdownJson     String            @default("{}")
+  concisenessScore      Int               @default(91)
+  rephrasesJson         String            @default("[]")
+  questionsAskedCount   Int               @default(5)
+  topKeywordsJson       String            @default("[]")
+  pausesCount           Int               @default(6)
+  eyeContactPct         Int               @default(89)
+  centeringPct          Int               @default(94)
+  smilesPct             Int               @default(64)
+  talkRatioPct          Int               @default(56)
+  transcriptJson        String            @default("[]")
+  aiSummary             String
+  rubricScoresJson      String            @default("[]")
+  followUpQuestionsJson String            @default("[]")
+  createdAt             DateTime          @default(now())
+  updatedAt             DateTime          @updatedAt
+
+  user                  User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  organization          Organization      @relation(fields: [orgId], references: [id], onDelete: Cascade)
+  scenario              RoleplayScenario? @relation(fields: [scenarioId], references: [id], onDelete: SetNull)
+  comments              SpeechComment[]
+}
+
+model SpeechComment {
+  id           String   @id @default(cuid())
+  speechId     String
+  authorName   String
+  authorAvatar String?
+  authorRole   String   @default("AI Coach")
+  timestampSec Int      @default(15)
+  text         String
+  isAiCoach    Boolean  @default(false)
+  createdAt    DateTime @default(now())
+
+  speech       Speech   @relation(fields: [speechId], references: [id], onDelete: Cascade)
+}
+
+model Program {
+  id             String                  @id @default(cuid())
+  orgId          String
+  title          String
+  description    String
+  status         String                  @default("PUBLISHED") // PUBLISHED, DRAFT
+  dueDate        String                  @default("Nov 30, 2026")
+  bannerColor    String                  @default("#524FFC")
+  assignedGroups String                  @default("Enterprise Sales NA, EMEA Revenue")
+  stepsJson      String                  @default("[]")
+  enrolledCount  Int                     @default(64)
+  completionRate Int                     @default(78)
+  avgScore       Int                     @default(86)
+  createdAt      DateTime                @default(now())
+
+  organization   Organization            @relation(fields: [orgId], references: [id], onDelete: Cascade)
+  enrollments    UserProgramEnrollment[]
+}
+
+model UserProgramEnrollment {
+  id                  String   @id @default(cuid())
+  userId              String
+  programId           String
+  status              String   @default("IN_PROGRESS") // NOT_STARTED, IN_PROGRESS, COMPLETED
+  completedStepsCount Int      @default(2)
+  totalStepsCount     Int      @default(4)
+  scorePct            Int      @default(89)
+  stepProgressJson    String   @default("[]")
+  updatedAt           DateTime @updatedAt
+
+  user                User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  program             Program  @relation(fields: [programId], references: [id], onDelete: Cascade)
+}
+
+model Course {
+  id              String       @id @default(cuid())
+  orgId           String
+  title           String
+  description     String
+  instructor      String
+  instructorRole  String
+  durationMinutes Int          @default(28)
+  category        String       @default("Sales Enablement")
+  thumbnailColor  String       @default("#1DA9E6")
+  lessonsJson     String       @default("[]")
+  completedCount  Int          @default(2)
+  totalLessons    Int          @default(4)
+  createdAt       DateTime     @default(now())
+
+  organization    Organization @relation(fields: [orgId], references: [id], onDelete: Cascade)
+}
+
+model PracticeLoop {
+  id                 String       @id @default(cuid())
+  orgId              String
+  title              String
+  description        String
+  focusArea          String       @default("AUTHORITY") // AUTHORITY, LISTENING, PRESENCE, USAGE
+  cadence            String       @default("Weekly")
+  assignedGroup      String       @default("Enterprise Sales NA")
+  goalTitle          String       @default("Handle Competitor & Price Objections")
+  activeParticipants Int          @default(42)
+  avgCompletionPct   Int          @default(87)
+  status             String       @default("ACTIVE")
+  createdAt          DateTime     @default(now())
+
+  organization       Organization @relation(fields: [orgId], references: [id], onDelete: Cascade)
+}
+
+model CoachBotDocument {
+  id             String       @id @default(cuid())
+  orgId          String
+  title          String
+  fileType       String       @default("PDF") // PDF, DOCX, PPTX, URL, PLAYBOOK
+  fileSize       String       @default("2.4 MB")
+  category       String       @default("Battlecard") // Battlecard, Playbook, Learning Material, File
+  contentSummary String
+  uploadedBy     String       @default("Alex Rivera")
+  createdAt      DateTime     @default(now())
+
+  organization   Organization @relation(fields: [orgId], references: [id], onDelete: Cascade)
+}
+
+model OrgIntegration {
+  id           String       @id @default(cuid())
+  orgId        String
+  providerKey  String
+  name         String
+  category     String       // CALL_INTELLIGENCE, CRM, LMS, SSO_SCIM, API_MCP
+  description  String
+  connected    Boolean      @default(false)
+  configJson   String       @default("{}")
+  lastSyncedAt String?
+
+  organization Organization @relation(fields: [orgId], references: [id], onDelete: Cascade)
+}
+
+model ExerciseAttempt {
+  id                String   @id @default(cuid())
+  userId            String
+  exerciseSlug      String   // spin-a-yarn, metaphor-mania, no-filler, storyteller
+  exerciseTitle     String
+  score             Int      @default(920)
+  durationSeconds   Int      @default(60)
+  wordsIncorporated Int      @default(5)
+  fillerCount       Int      @default(0)
+  transcript        String
+  createdAt         DateTime @default(now())
+
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}

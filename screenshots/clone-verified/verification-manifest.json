@@ -1,0 +1,332 @@
+[
+  {
+    "routePath": "/",
+    "label": "01_marketing_home",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/01_marketing_home.png"
+  },
+  {
+    "routePath": "/pricing",
+    "label": "02_marketing_pricing",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/02_marketing_pricing.png"
+  },
+  {
+    "routePath": "/sample-speeches",
+    "label": "03_sample_speeches",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/03_sample_speeches.png"
+  },
+  {
+    "routePath": "/courses",
+    "label": "04_public_courses",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/04_public_courses.png"
+  },
+  {
+    "routePath": "/share/NHCkSatH",
+    "label": "05_share_speech_report",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/05_share_speech_report.png"
+  },
+  {
+    "routePath": "/signin",
+    "label": "06_auth_signin",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/06_auth_signin.png"
+  },
+  {
+    "routePath": "/signup",
+    "label": "07_auth_signup",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/07_auth_signup.png"
+  },
+  {
+    "routePath": "/forgot-password",
+    "label": "08_auth_forgot_password",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/08_auth_forgot_password.png"
+  },
+  {
+    "routePath": "/onboarding",
+    "label": "09_onboarding_wizard",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/09_onboarding_wizard.png"
+  },
+  {
+    "routePath": "/home",
+    "label": "10_member_home",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/10_member_home.png"
+  },
+  {
+    "routePath": "/roleplays",
+    "label": "11_member_roleplays",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/11_member_roleplays.png"
+  },
+  {
+    "routePath": "/builder",
+    "label": "12_ai_roleplay_builder",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/12_ai_roleplay_builder.png"
+  },
+  {
+    "routePath": "/dashboard",
+    "label": "13_member_dashboard",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/13_member_dashboard.png"
+  },
+  {
+    "routePath": "/library",
+    "label": "14_member_library",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/14_member_library.png"
+  },
+  {
+    "routePath": "/library/user-alex/feedback/speech-nhck",
+    "label": "15_member_speech_feedback",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/15_member_speech_feedback.png"
+  },
+  {
+    "routePath": "/account",
+    "label": "16_account_settings",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/16_account_settings.png"
+  },
+  {
+    "routePath": "/practice/conversation",
+    "label": "17_practice_conversation_studio",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/17_practice_conversation_studio.png"
+  },
+  {
+    "routePath": "/practice/interview",
+    "label": "18_practice_interview_studio",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/18_practice_interview_studio.png"
+  },
+  {
+    "routePath": "/practice/speech",
+    "label": "19_practice_speech_studio",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/19_practice_speech_studio.png"
+  },
+  {
+    "routePath": "/practice/coach",
+    "label": "20_practice_coach_studio",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/20_practice_coach_studio.png"
+  },
+  {
+    "routePath": "/org/resources/programs",
+    "label": "21_my_learning_programs",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/21_my_learning_programs.png"
+  },
+  {
+    "routePath": "/org/resources/programs/prog-fy26-sales",
+    "label": "22_my_learning_program_detail",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/22_my_learning_program_detail.png"
+  },
+  {
+    "routePath": "/org/resources/courses",
+    "label": "23_my_learning_courses",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/23_my_learning_courses.png"
+  },
+  {
+    "routePath": "/org/resources/exercises",
+    "label": "24_my_learning_exercises",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/24_my_learning_exercises.png"
+  },
+  {
+    "routePath": "/exercises/spin-a-yarn",
+    "label": "25_game_spin_a_yarn",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/25_game_spin_a_yarn.png"
+  },
+  {
+    "routePath": "/exercises/metaphor-mania",
+    "label": "26_game_metaphor_mania",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/26_game_metaphor_mania.png"
+  },
+  {
+    "routePath": "/exercises/no-filler",
+    "label": "27_game_no_filler",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/27_game_no_filler.png"
+  },
+  {
+    "routePath": "/exercises/storyteller",
+    "label": "28_game_storyteller",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/28_game_storyteller.png"
+  },
+  {
+    "routePath": "/org/overview",
+    "label": "29_org_admin_overview",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/29_org_admin_overview.png"
+  },
+  {
+    "routePath": "/org/analytics/overview",
+    "label": "30_org_analytics_overview",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/30_org_analytics_overview.png"
+  },
+  {
+    "routePath": "/org/analytics/programs",
+    "label": "31_org_analytics_programs",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/31_org_analytics_programs.png"
+  },
+  {
+    "routePath": "/org/analytics/goals",
+    "label": "32_org_analytics_goals",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/32_org_analytics_goals.png"
+  },
+  {
+    "routePath": "/org/analytics/roleplays",
+    "label": "33_org_analytics_roleplays",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/33_org_analytics_roleplays.png"
+  },
+  {
+    "routePath": "/org/analytics/reports-data",
+    "label": "34_org_analytics_reports_data",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/34_org_analytics_reports_data.png"
+  },
+  {
+    "routePath": "/org/content/roleplays",
+    "label": "35_org_content_roleplays",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/35_org_content_roleplays.png"
+  },
+  {
+    "routePath": "/org/content/roleplays/create",
+    "label": "36_org_content_roleplays_create",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/36_org_content_roleplays_create.png"
+  },
+  {
+    "routePath": "/org/content/personas",
+    "label": "37_org_content_personas",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/37_org_content_personas.png"
+  },
+  {
+    "routePath": "/org/content/personas/create",
+    "label": "38_org_content_personas_create",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/38_org_content_personas_create.png"
+  },
+  {
+    "routePath": "/org/content/interviews",
+    "label": "39_org_content_interviews",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/39_org_content_interviews.png"
+  },
+  {
+    "routePath": "/org/content/question-banks",
+    "label": "40_org_content_question_banks",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/40_org_content_question_banks.png"
+  },
+  {
+    "routePath": "/org/content/goals",
+    "label": "41_org_content_goals",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/41_org_content_goals.png"
+  },
+  {
+    "routePath": "/org/content/goals/create",
+    "label": "42_org_content_goals_create",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/42_org_content_goals_create.png"
+  },
+  {
+    "routePath": "/org/content/programs",
+    "label": "43_org_content_programs",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/43_org_content_programs.png"
+  },
+  {
+    "routePath": "/org/content/programs/create",
+    "label": "44_org_content_programs_create",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/44_org_content_programs_create.png"
+  },
+  {
+    "routePath": "/org/content/programs/prog-fy26-sales",
+    "label": "45_org_content_program_detail",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/45_org_content_program_detail.png"
+  },
+  {
+    "routePath": "/org/content/coachbot",
+    "label": "46_org_content_coachbot",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/46_org_content_coachbot.png"
+  },
+  {
+    "routePath": "/org/content/files",
+    "label": "47_org_content_files",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/47_org_content_files.png"
+  },
+  {
+    "routePath": "/org/content/learning-materials",
+    "label": "48_org_content_learning_materials",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/48_org_content_learning_materials.png"
+  },
+  {
+    "routePath": "/org/loops",
+    "label": "49_org_loops",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/49_org_loops.png"
+  },
+  {
+    "routePath": "/org/people/members",
+    "label": "50_org_people_members",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/50_org_people_members.png"
+  },
+  {
+    "routePath": "/org/people/members/invites",
+    "label": "51_org_people_invites",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/51_org_people_invites.png"
+  },
+  {
+    "routePath": "/org/people/groups",
+    "label": "52_org_people_groups",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/52_org_people_groups.png"
+  },
+  {
+    "routePath": "/org/people/reporting-teams",
+    "label": "53_org_people_reporting_teams",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/53_org_people_reporting_teams.png"
+  },
+  {
+    "routePath": "/org/settings",
+    "label": "54_org_settings",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/54_org_settings.png"
+  },
+  {
+    "routePath": "/org/integrations",
+    "label": "55_org_integrations",
+    "status": 200,
+    "screenshot": "/home/azadmin/yoodli/screenshots/clone-verified/55_org_integrations.png"
+  }
+]
